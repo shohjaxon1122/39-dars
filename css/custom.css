@@ -1,0 +1,89 @@
+.form-control::placeholder{
+    color: #ccc
+    
+  }
+
+
+
+.nav-tabs{
+  border: none !important;
+  font-weight: 700;
+  height: 100%;
+  padding-top: 9px;
+}
+.nav-tabs .nav-link{
+  background-color: transparent !important;
+  border: none;
+  color: #ccc;
+  height: 100%;
+}
+.nav-tabs .active{
+  border-bottom: 6px solid rgb(51, 125, 235) !important;
+  color: rgb(51, 125, 235) !important;
+}
+.nav-tabs .nav-item:not(:last-child){
+  margin-right: 20px;
+}
+/* navbar end */
+
+
+.modal-left{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(44, 43, 43, 0.274);
+  z-index: 2;
+  display: none;
+}
+.modal-left-content{
+  width: 250px;
+  height: 100%;
+  background-color: #343a40;; 
+}
+.modal-left-head{
+  padding: 25px 10px 10px 25px;
+  background: url(imgs/Desktop.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.white{
+  color: #fff;
+  background-color: #343a40;
+  padding: 9px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+
+
+}
+.list-group-item{
+  background: transparent !important;
+  border: none !important;
+  color: #fff !important;
+}
+.list-group-item:hover{
+  background-color: #1f1f3167 !important;
+}
+.modal-left-footer{
+ position: absolute;
+ bottom: 15px;
+ left: 25px;
+}
+
+.modal-left .modal-left-content{
+  animation: show 0.3s ease forwards;
+}
+.modal-backdrow, .show{
+  display: none;
+}
+
+@keyframes show{
+  from{
+      transform: translatex(-50px);
+  }
+  to{
+      transform: translatex(0);
+  }
+}
